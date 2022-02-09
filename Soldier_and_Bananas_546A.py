@@ -2,10 +2,7 @@
 
 ints = [int(i) for i in input().split()]
 
-cost = 0
-for i in range(1, ints[2] + 1):
-    cost += i * ints[0]
-
+cost = sum(i * ints[0] for i in range(1, ints[2] + 1))
 if cost < ints[1]:
     print(0)
 else:

@@ -1,6 +1,6 @@
 # 263A - Boy or Girl
 
-username = {char for char in input()}
+username = set(input())
 if len(username) % 2 != 0:
     print("IGNORE HIM!")
 else:

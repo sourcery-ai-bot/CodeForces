@@ -2,7 +2,7 @@
 
 a = list(input().lower().replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", ""))
 pr_str = ""
-if len(a) > 0:
+if a:
     for e in a:
-        pr_str += "." + e
+        pr_str += f'.{e}'
 print(pr_str)
